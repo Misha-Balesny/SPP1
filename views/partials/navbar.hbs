@@ -1,0 +1,17 @@
+<nav class="blue darken-1">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo" style="margin-left: 10px;">Task Manager</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if isIndex}}
+            <li class="active"><a href="/">Tasks</a></li>
+        {{else}}
+            <li ><a href="/">Tasks</a></li>
+        {{/if}}
+        {{#if isCreate}}
+            <li class="active"><a href="/create">Add New</a></li>
+        {{else}}
+            <li><a href="/create">Add New</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
